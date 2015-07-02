@@ -1,0 +1,25 @@
+compile(A, B):
+	make
+execute(A, B):
+	./main
+running result of B:
+	enter the sorting size(ex. 1000, 10000, 100000): 1000
+	sort(): 0.000000 seconds.
+	weight/wieght_2 are different.
+	insertion_sort(): 0.020000 seconds.
+	weight/wieght_2 are the same.
+	F74012112@2015cpp:~/lab3/B$ ./main
+	enter the sorting size(ex. 1000, 10000, 100000): 10000
+	sort(): 0.000000 seconds.
+	weight/wieght_2 are different.
+	insertion_sort(): 1.320000 seconds.
+	weight/wieght_2 are the same.
+	F74012112@2015cpp:~/lab3/B$ ./main
+	enter the sorting size(ex. 1000, 10000, 100000): 100000
+	sort(): 0.050000 seconds.
+	weight/wieght_2 are different.
+	insertion_sort(): 128.300000 seconds.
+explaination of B:
+	由執行結果可知,如果input size夠大的話,sort跟insertion_sort
+會有很顯著的時間差,就如最後的一次比較,(n^2)/(nlogn)for n=100000兩者
+大約差距兩千到三千倍的時間,而128.3/0.05=2566為合理範圍
